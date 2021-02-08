@@ -1,5 +1,5 @@
 # VideoCompress
-A Telegram Video Compressor Bot By [@AbirHasan2005](https://t.me/linux_repo). **This bot works for all!** No need to define each user IDs to use bot. Also works in Group.
+A Telegram Video Compressor Bot. **This bot works for all!** No need to define each user IDs to use bot. Also works in Group.
 
 ### Special Features:
 - Bot's Live Status on Channel
@@ -8,8 +8,6 @@ A Telegram Video Compressor Bot By [@AbirHasan2005](https://t.me/linux_repo). **
 	- Can Broadcast messages
 	- Can Ban-Unban Manually
 	- Can see numbers users in DB
-
-* If you need more help to Deploy Feel Free to ask in [Support Group](https://t.me/linux_repo).
 
 ### Demo Bot:
 <a href="https://t.me/VidCom_Robot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
@@ -20,8 +18,6 @@ A Telegram Video Compressor Bot By [@AbirHasan2005](https://t.me/linux_repo). **
 ## Easy Deploy:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Support Group:
-<a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
 
 ## Required Configs:
 * `SESSION_NAME` - Any name of session. Better keep default.
@@ -59,22 +55,3 @@ unban_user - Unban a User
 banned_users - Show Banned Users
 exec - EXEC 🙄
 ```
-
-## Follow on:
-<p align="left">
-<a href="https://github.com/AbirHasan2005"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
-</p>
-<p align="left">
-<a href="https://twitter.com/AbirHasan2005"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a>
-</p>
-<p align="left">
-<a href="https://facebook.com/AbirHasan2005"><img src="https://img.shields.io/badge/Facebook-Follow%20on%20Facebook-blue.svg?logo=facebook"></a>
-</p>
-<p align="left">
-<a href="https://instagram.com/AbirHasan2005"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
-</p>
-
-### Credits:
-* [Jijinr](https://github.com/Jijinr)
-* [SpEcHide](https://github.com/spechide)
-* [AbirHasan2005](https://github.com/AbirHasan2005)
