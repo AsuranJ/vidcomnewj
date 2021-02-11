@@ -103,7 +103,7 @@ async def incoming_start_message_f(bot, update):
     )
     
 async def incoming_compress_message_f(bot, update):
-  """/compress command"""
+  """/jcom command"""
   if not await db.is_user_exist(update.chat.id):
       await db.add_user(update.chat.id)
   update_channel = UPDATES_CHANNEL
@@ -355,7 +355,7 @@ async def incoming_compress_message_f(bot, update):
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
       now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await upload_start.delete()
-      await bot.send_message(chat_id, f"**Upload Done, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+      await bot.send_message(chat_id, f"**Upload Done, JAsuran Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
       LOGGER.info(upload.caption);
       try:
         await upload.edit_caption(
