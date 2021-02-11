@@ -103,12 +103,12 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
         if difference > 0:
           ETA = TimeFormatter(difference*1000)
         percentage = math.floor(elapsed_time * 100 / total_time)
-        progress_str = "📊 <b>Progress:</b> {0}%\n[{1}{2}] \n\n© @BotDunia | @Discovery_Updates".format(
+        progress_str = "📊 <b>Progress:</b> {0}%\n[{1}{2}] \n\n© @JAsuran123".format(
             round(percentage, 2),
             ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),
             ''.join([UN_FINISHED_PROGRESS_STR for i in range(10 - math.floor(percentage / 10))])
             )
-        stats = f'📦️ <b>Converting To H256 </b>\n\n' \
+        stats = f'📦️ <b>Converting To High Resolution Compress </b>\n\n' \
                 f'⏰️ <b>TimeLeft:</b> {ETA}\n\n' \
                 f'{progress_str}\n'
         try:
