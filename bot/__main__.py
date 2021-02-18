@@ -88,7 +88,7 @@ if __name__ == "__main__" :
     # BANNED_USERS Admin Command
     incoming_banned_command = MessageHandler(
         _banned_usrs,
-        filters=filters.command(["banned_users"]) & filters.user(AUTH_USERS) & filters.reply
+        filters=filters.command(["banned_users"]) & filters.user(AUTH_USERS)
     )
     app.add_handler(incoming_banned_command)
 
