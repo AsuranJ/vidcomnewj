@@ -11,7 +11,7 @@ class Command:
     )
     COMPRESS = get_config(
         "COMMAND_COMPRESS",
-        "jcom"
+        "compress"
     )
     CANCEL = get_config(
         "COMMAND_CANCEL",
