@@ -312,6 +312,7 @@ async def incoming_compress_message_f(bot, update):
            sent_message, 
            target_percentage, 
            isAuto
+           compress_start
          )
     compressed_time = TimeFormatter((time.time() - c_start)*1000)
     LOGGER.info(o)
