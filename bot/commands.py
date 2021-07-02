@@ -7,19 +7,19 @@ from bot.get_cfg import get_config
 class Command:
     START = get_config(
         "COMMAND_START",
-        "start"
+        "start1"
     )
     COMPRESS = get_config(
         "COMMAND_COMPRESS",
-        "compress"
+        "com"
     )
     CANCEL = get_config(
         "COMMAND_CANCEL",
-        "cancel"
+        "cancel1"
     )
     STATUS = get_config(
         "COMMAND_STATUS",
-        "status"
+        "status1"
     )
     EXEC = get_config(
         "COMMAND_EXEC",
@@ -27,9 +27,9 @@ class Command:
     )
     HELP = get_config(
         "COMMAND_HELP",
-        "help"
+        "help1"
     )
     UPLOAD_LOG_FILE = get_config(
         "COMMAND_UPLOAD_LOG_FILE",
-        "log"
+        "log1"
     )
