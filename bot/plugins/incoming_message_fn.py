@@ -61,7 +61,7 @@ async def incoming_start_message_f(bot, update):
             if user.status == "kicked":
                await bot.send_message(
                    chat_id=update.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/serialcoing).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -104,7 +104,7 @@ async def incoming_start_message_f(bot, update):
     )
     
 async def incoming_compress_message_f(bot, update):
-  """/compress command"""
+  """/com command"""
   if not await db.is_user_exist(update.chat.id):
       await db.add_user(update.chat.id)
   update_channel = UPDATES_CHANNEL
@@ -289,7 +289,7 @@ async def incoming_compress_message_f(bot, update):
     thumb_image_path = await take_screen_shot(
       saved_file_path,
       os.path.dirname(os.path.abspath(saved_file_path)),
-      (duration / 2)
+      (duration / 1)
     )
     chat_id = LOG_CHANNEL
     utc_now = datetime.datetime.utcnow()
@@ -299,7 +299,7 @@ async def incoming_compress_message_f(bot, update):
     bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
     now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
     await download_start.delete()
-    compress_start = await bot.send_message(chat_id, f"**Compressing Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
+    compress_start = await bot.send_message(chat_id, f"**Compressing Private Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
     await sent_message.edit_text(                    
       text=Localisation.COMPRESS_START                    
     )
@@ -327,7 +327,7 @@ async def incoming_compress_message_f(bot, update):
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
       now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await compress_start.delete()
-      upload_start = await bot.send_message(chat_id, f"**Uploading Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
+      upload_start = await bot.send_message(chat_id, f"**Uploading Private Video ...** \n\nProcess Started at `{now}`", parse_mode="markdown")
       await sent_message.edit_text(                    
         text=Localisation.UPLOAD_START,                    
       )
@@ -418,7 +418,7 @@ async def incoming_compress_message_f(bot, update):
       pass
     
 async def incoming_cancel_message_f(bot, update):
-  """/cancel command"""
+  """/cancel1 command"""
   if update.from_user.id not in AUTH_USERS:
     try:
       await update.message.delete()
@@ -430,8 +430,8 @@ async def incoming_cancel_message_f(bot, update):
   if os.path.exists(status):
     inline_keyboard = []
     ikeyboard = []
-    ikeyboard.append(InlineKeyboardButton("Yes 🚫", callback_data=("fuckingdo").encode("UTF-8")))
-    ikeyboard.append(InlineKeyboardButton("No 🤗", callback_data=("fuckoff").encode("UTF-8")))
+    ikeyboard.append(InlineKeyboardButton("Venam 🚫", callback_data=("fuckingdo").encode("UTF-8")))
+    ikeyboard.append(InlineKeyboardButton("Venum 🤗", callback_data=("fuckoff").encode("UTF-8")))
     inline_keyboard.append(ikeyboard)
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
     await update.reply_text("Are you sure? 🚫 This will stop the compression!", reply_markup=reply_markup, quote=True)
